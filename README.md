@@ -4,6 +4,8 @@
 # Using example from the game FGO
 ## WARNING THIS IS A STUDENT PROJECT CREATE TO KNOW ABOUT THE PATTERN DESIGN
 
-"dotnet build" first
+--- First: Delete the " .vscode file " and " bin file " just in case, i'm not good at git :)) ----
 
-"dotnet run" second
+---- Second: "dotnet build" ----
+
+---- third: "dotnet run" ----
