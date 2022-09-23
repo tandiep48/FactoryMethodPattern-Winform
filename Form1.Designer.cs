@@ -81,17 +81,36 @@ namespace FactoryMethod
         horizontal.BorderStyle = BorderStyle.Fixed3D;
         horizontal.AutoSize = false;
         horizontal.Location = new System.Drawing.Point(180,750);
-        horizontal.ClientSize = new System.Drawing.Size(1435,5);
+        horizontal.ClientSize = new System.Drawing.Size(1080,5);
         horizontal.BackColor = Color.BlueViolet;
 
         
-        verticalLine = new Label();
-        verticalLine.Text = "";
-        verticalLine.BorderStyle = BorderStyle.Fixed3D;
-        verticalLine.AutoSize = false;
-        verticalLine.Location = new System.Drawing.Point(180,0);
-        verticalLine.ClientSize = new System.Drawing.Size(5,755);
-        verticalLine.BackColor = Color.BlueViolet;
+        verticalLine1 = new Label();
+        verticalLine1.Text = "";
+        verticalLine1.BorderStyle = BorderStyle.Fixed3D;
+        verticalLine1.AutoSize = false;
+        verticalLine1.Location = new System.Drawing.Point(180,0);
+        verticalLine1.ClientSize = new System.Drawing.Size(5,755);
+        verticalLine1.BackColor = Color.BlueViolet;
+
+
+        verticalLine2 = new Label();
+        verticalLine2.Text = "";
+        verticalLine2.BorderStyle = BorderStyle.Fixed3D;
+        verticalLine2.AutoSize = false;
+        verticalLine2.Location = new System.Drawing.Point(1255,0);
+        verticalLine2.ClientSize = new System.Drawing.Size(5,755);
+        verticalLine2.BackColor = Color.BlueViolet;
+
+
+        // GBOutline = new Panel();
+        // GBOutline.Text = "";
+        // GBOutline.AutoSize = false;
+        // GBOutline.BorderStyle = BorderStyle.Fixed3D;
+        // GBOutline.Location = new System.Drawing.Point(180,0);
+        // GBOutline.ClientSize = new System.Drawing.Size(1140,752);
+        // GBOutline.BackColor = Color.White;
+
 
         clawAnimated = new Label();
         clawAnimated.Text = "";
@@ -110,6 +129,14 @@ namespace FactoryMethod
         leftPic1.SizeMode =PictureBoxSizeMode.StretchImage;
         // leftPic1.BackColor = Color.BlueViolet;
 
+        // rightPic1 = new PictureBox();
+        // rightPic1.BorderStyle = BorderStyle.Fixed3D;
+        // rightPic1.AutoSize = false;
+        // rightPic1.Location = new System.Drawing.Point(1260,50);
+        // rightPic1.Image = System.Drawing.Image.FromFile(@"img_resource/Mushashi.png");
+        // rightPic1.ClientSize = new System.Drawing.Size(175,300);
+        // rightPic1.SizeMode =PictureBoxSizeMode.StretchImage;
+
         leftPic2 = new PictureBox();
         leftPic2.BorderStyle = BorderStyle.Fixed3D;
         leftPic2.AutoSize = false;
@@ -121,26 +148,29 @@ namespace FactoryMethod
         backGround = new PictureBox();
         backGround.BorderStyle = BorderStyle.Fixed3D;
         backGround.AutoSize = false;
-        backGround.Location = new System.Drawing.Point(0,0);
+        backGround.Location = new System.Drawing.Point(180,0);
         backGround.Image = System.Drawing.Image.FromFile(@"img_resource/BG_game2.jpg");
-        backGround.ClientSize = new System.Drawing.Size(1440,750);
+        backGround.ClientSize = new System.Drawing.Size(1078,750);
         backGround.SizeMode =PictureBoxSizeMode.StretchImage;
 
         BGbottom = new PictureBox();
         BGbottom.BorderStyle = BorderStyle.Fixed3D;
         BGbottom.AutoSize = false;
         BGbottom.Location = new System.Drawing.Point(0,750);
-        // BGbottom.Image = System.Drawing.Image.FromFile(@"img_resource/BG_game4.jpg");
         BGbottom.BackColor = Color.FromArgb(68,77,202);
         BGbottom.ClientSize = new System.Drawing.Size(1440,150);
         BGbottom.SizeMode =PictureBoxSizeMode.StretchImage;
 
-        //  panel1 = new Panel();
-        // panel1.Text = "";
-        // panel1.AutoSize = false;
-        // panel1.Location = new System.Drawing.Point(100,0);
-        // panel1.ClientSize = new System.Drawing.Size(850,755);
+        BGright = new PictureBox();
+        BGright.BorderStyle = BorderStyle.None;
+        BGright.AutoSize = false;
+        BGright.Location = new System.Drawing.Point(1260,0);
+        BGright.Image = System.Drawing.Image.FromFile(@"img_resource/command.png");
+        BGright.ClientSize = new System.Drawing.Size(180,760);
+        BGright.BackColor = Color.FromArgb(68,77,202);
+        BGright.SizeMode =PictureBoxSizeMode.StretchImage;
 
+        
 
 
         this.Controls.Add(button1);
@@ -149,21 +179,24 @@ namespace FactoryMethod
         this.Controls.Add(btnClaw);
         this.Controls.Add(btnStart);
         this.Controls.Add(horizontal);
-        this.Controls.Add(verticalLine);
+        this.Controls.Add(verticalLine1);
+        this.Controls.Add(verticalLine2);
         this.Controls.Add(clawAnimated);
         this.Controls.Add(leftPic1);
         this.Controls.Add(leftPic2);
+        this.Controls.Add(rightPic1);
         this.Controls.Add(backGround);
         this.Controls.Add(BGbottom);
-        // this.Controls.Add(panel1);
+        this.Controls.Add(BGright);
+        // this.Controls.Add(GBOutline);
     }
     private Button button1,btnLeft,btnRight,btnClaw,btnStart;
-    private Label horizontal,verticalLine,clawAnimated;
-    private PictureBox leftPic1,leftPic2,backGround,BGbottom;
+    private Label horizontal,verticalLine1,verticalLine2,clawAnimated;
+    private PictureBox leftPic1,leftPic2,rightPic1,backGround,BGbottom,BGright;
     
     
 
-    // private Panel panel1;
+    // private Panel GBOutline;
     #endregion
 }
 
