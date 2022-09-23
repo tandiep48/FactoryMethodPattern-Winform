@@ -30,11 +30,13 @@ namespace FactoryMethod
     /// </summary>
     private void InitializeComponent()
     {
+        
         this.components = new System.ComponentModel.Container();
         this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
         this.ClientSize = new System.Drawing.Size(1440, 900);
         this.Text = "Form1";
         // this.BackgroundImage = Image.FromFile(@"");
+
 
         button1 = new Button();
         button1.Name = "button1";
@@ -42,13 +44,15 @@ namespace FactoryMethod
         button1.Location = new System.Drawing.Point(100,20);
         button1.ClientSize = new System.Drawing.Size(100, 50);
 
+
         btnLeft = new Button();
-       btnLeft.Name = "btnLeft";
-       btnLeft.Text = "";
-       btnLeft.Location = new System.Drawing.Point(250,780);
-       btnLeft.ClientSize = new System.Drawing.Size(100, 75);
-       btnLeft.Image = System.Drawing.Image.FromFile(@"img_resource/left-arrow.png");
-       btnLeft.BackColor = Color.White;
+        btnLeft.Name = "btnLeft";
+        btnLeft.Text = "";
+        btnLeft.Location = new System.Drawing.Point(250,780);
+        btnLeft.ClientSize = new System.Drawing.Size(100, 75);
+        btnLeft.Image = System.Drawing.Image.FromFile(@"img_resource/left-arrow.png");
+        btnLeft.BackColor = Color.White;
+
 
         btnRight = new Button();
         btnRight.Name = "btnRight";
@@ -58,6 +62,7 @@ namespace FactoryMethod
         btnRight.Image = System.Drawing.Image.FromFile(@"img_resource/right-arrow.png");
         btnRight.BackColor = Color.White;
 
+
         btnClaw = new Button();
         btnClaw.Name = "btnClaw";
         btnClaw.Text = "";
@@ -66,6 +71,7 @@ namespace FactoryMethod
         btnClaw.Image = System.Drawing.Image.FromFile(@"img_resource/claw-machine.png");
         btnClaw.BackColor = Color.White;
 
+
         btnStart = new Button();
         btnStart.Name = "btnStart";
         btnStart.Text = "";
@@ -73,7 +79,6 @@ namespace FactoryMethod
         btnStart.ClientSize = new System.Drawing.Size(130, 75);
         btnStart.Image = System.Drawing.Image.FromFile(@"img_resource/start-button-big.png");
         btnStart.BackColor = Color.White;
-
 
 
         horizontal = new Label();
@@ -97,8 +102,8 @@ namespace FactoryMethod
         clawAnimated.Text = "";
         clawAnimated.BorderStyle = BorderStyle.Fixed3D;
         clawAnimated.AutoSize = false;
-        clawAnimated.Location = new System.Drawing.Point(720,0);
-        clawAnimated.ClientSize = new System.Drawing.Size(5,665);
+        clawAnimated.Location = new System.Drawing.Point(posX,posY);
+        clawAnimated.ClientSize = new System.Drawing.Size(5,clawVerticalLine);
         clawAnimated.BackColor = Color.BlueViolet;
 
         leftPic1 = new PictureBox();
@@ -108,7 +113,7 @@ namespace FactoryMethod
         leftPic1.Image = System.Drawing.Image.FromFile(@"img_resource/Mushashi.png");
         leftPic1.ClientSize = new System.Drawing.Size(175,300);
         leftPic1.SizeMode =PictureBoxSizeMode.StretchImage;
-        // leftPic1.BackColor = Color.BlueViolet;
+        leftPic1.BackColor = Color.BlueViolet;
 
         leftPic2 = new PictureBox();
         leftPic2.BorderStyle = BorderStyle.Fixed3D;
@@ -122,26 +127,26 @@ namespace FactoryMethod
         backGround.BorderStyle = BorderStyle.Fixed3D;
         backGround.AutoSize = false;
         backGround.Location = new System.Drawing.Point(0,0);
-        backGround.Image = System.Drawing.Image.FromFile(@"img_resource/BG_game2.jpg");
+        backGround.BackgroundImage = System.Drawing.Image.FromFile(@"img_resource/BG_game2.jpg");
         backGround.ClientSize = new System.Drawing.Size(1440,750);
         backGround.SizeMode =PictureBoxSizeMode.StretchImage;
+        
 
         BGbottom = new PictureBox();
         BGbottom.BorderStyle = BorderStyle.Fixed3D;
         BGbottom.AutoSize = false;
         BGbottom.Location = new System.Drawing.Point(0,750);
-        // BGbottom.Image = System.Drawing.Image.FromFile(@"img_resource/BG_game4.jpg");
+        BGbottom.Image = System.Drawing.Image.FromFile(@"img_resource/BG_game4.jpg");
         BGbottom.BackColor = Color.FromArgb(68,77,202);
         BGbottom.ClientSize = new System.Drawing.Size(1440,150);
         BGbottom.SizeMode =PictureBoxSizeMode.StretchImage;
+        BGbottom.SendToBack();
 
         //  panel1 = new Panel();
         // panel1.Text = "";
         // panel1.AutoSize = false;
         // panel1.Location = new System.Drawing.Point(100,0);
         // panel1.ClientSize = new System.Drawing.Size(850,755);
-
-
 
         this.Controls.Add(button1);
         this.Controls.Add(btnLeft);
@@ -160,7 +165,7 @@ namespace FactoryMethod
     private Button button1,btnLeft,btnRight,btnClaw,btnStart;
     private Label horizontal,verticalLine,clawAnimated;
     private PictureBox leftPic1,leftPic2,backGround,BGbottom;
-    
+    private int posX = 720, posY = 0, clawVerticalLine = 665;
     
 
     // private Panel panel1;

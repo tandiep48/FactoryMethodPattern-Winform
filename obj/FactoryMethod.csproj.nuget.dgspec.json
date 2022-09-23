@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "E:\\Đại Học Huflit\\HK2022-2023\\PJ\\FactoryMethodPattern-Winform\\FactoryMethod.csproj": {}
+    "D:\\MyProject\\C#\\FactoryMethod\\FactoryMethod.csproj": {}
   },
   "projects": {
-    "E:\\Đại Học Huflit\\HK2022-2023\\PJ\\FactoryMethodPattern-Winform\\FactoryMethod.csproj": {
+    "D:\\MyProject\\C#\\FactoryMethod\\FactoryMethod.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Đại Học Huflit\\HK2022-2023\\PJ\\FactoryMethodPattern-Winform\\FactoryMethod.csproj",
+        "projectUniqueName": "D:\\MyProject\\C#\\FactoryMethod\\FactoryMethod.csproj",
         "projectName": "FactoryMethod",
-        "projectPath": "E:\\Đại Học Huflit\\HK2022-2023\\PJ\\FactoryMethodPattern-Winform\\FactoryMethod.csproj",
-        "packagesPath": "C:\\Users\\Win7-64 SP1\\.nuget\\packages\\",
-        "outputPath": "E:\\Đại Học Huflit\\HK2022-2023\\PJ\\FactoryMethodPattern-Winform\\obj\\",
+        "projectPath": "D:\\MyProject\\C#\\FactoryMethod\\FactoryMethod.csproj",
+        "packagesPath": "C:\\Users\\tandi\\.nuget\\packages\\",
+        "outputPath": "D:\\MyProject\\C#\\FactoryMethod\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Win7-64 SP1\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\tandi\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net6.0-windows"
@@ -43,8 +43,7 @@
             "net47",
             "net471",
             "net472",
-            "net48",
-            "net481"
+            "net48"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -56,7 +55,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.302\\RuntimeIdentifierGraph.json"
         }
       }
     }
