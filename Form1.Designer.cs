@@ -36,19 +36,13 @@ namespace FactoryMethod
         this.Text = "Form1";
         // this.BackgroundImage = Image.FromFile(@"");
 
-        button1 = new Button();
-        button1.Name = "button1";
-        button1.Text = "Guess this servant type";
-        button1.Location = new System.Drawing.Point(100,20);
-        button1.ClientSize = new System.Drawing.Size(100, 50);
-
         btnLeft = new Button();
-       btnLeft.Name = "btnLeft";
-       btnLeft.Text = "";
-       btnLeft.Location = new System.Drawing.Point(250,780);
-       btnLeft.ClientSize = new System.Drawing.Size(100, 75);
-       btnLeft.Image = System.Drawing.Image.FromFile(@"img_resource/left-arrow.png");
-       btnLeft.BackColor = Color.White;
+        btnLeft.Name = "btnLeft";
+        btnLeft.Text = "";
+        btnLeft.Location = new System.Drawing.Point(250,780);
+        btnLeft.ClientSize = new System.Drawing.Size(100, 75);
+        btnLeft.Image = System.Drawing.Image.FromFile(@"img_resource/left-arrow.png");
+        btnLeft.BackColor = Color.White;
 
         btnRight = new Button();
         btnRight.Name = "btnRight";
@@ -80,7 +74,7 @@ namespace FactoryMethod
         horizontal.Text = "";
         horizontal.BorderStyle = BorderStyle.Fixed3D;
         horizontal.AutoSize = false;
-        horizontal.Location = new System.Drawing.Point(180,750);
+        horizontal.Location = new System.Drawing.Point(ScrWidth-1260,ScrHeight-150);
         horizontal.ClientSize = new System.Drawing.Size(1080,5);
         horizontal.BackColor = Color.BlueViolet;
 
@@ -89,7 +83,7 @@ namespace FactoryMethod
         verticalLine1.Text = "";
         verticalLine1.BorderStyle = BorderStyle.Fixed3D;
         verticalLine1.AutoSize = false;
-        verticalLine1.Location = new System.Drawing.Point(180,0);
+        verticalLine1.Location = new System.Drawing.Point(ScrWidth-1260,ScrHeight-900);
         verticalLine1.ClientSize = new System.Drawing.Size(5,755);
         verticalLine1.BackColor = Color.BlueViolet;
 
@@ -98,7 +92,7 @@ namespace FactoryMethod
         verticalLine2.Text = "";
         verticalLine2.BorderStyle = BorderStyle.Fixed3D;
         verticalLine2.AutoSize = false;
-        verticalLine2.Location = new System.Drawing.Point(1255,0);
+        verticalLine2.Location = new System.Drawing.Point(ScrWidth-185,ScrHeight-900);
         verticalLine2.ClientSize = new System.Drawing.Size(5,755);
         verticalLine2.BackColor = Color.BlueViolet;
 
@@ -116,14 +110,14 @@ namespace FactoryMethod
         clawAnimated.Text = "";
         clawAnimated.BorderStyle = BorderStyle.Fixed3D;
         clawAnimated.AutoSize = false;
-        clawAnimated.Location = new System.Drawing.Point(720,0);
-        clawAnimated.ClientSize = new System.Drawing.Size(5,665);
+        clawAnimated.Location = new System.Drawing.Point(clawVerticalLineX,clawVerticalLineY);
+        clawAnimated.ClientSize = new System.Drawing.Size(clawOrgSizeWidth,clawOrgSizeHeight);
         clawAnimated.BackColor = Color.BlueViolet;
 
         leftPic1 = new PictureBox();
         leftPic1.BorderStyle = BorderStyle.Fixed3D;
         leftPic1.AutoSize = false;
-        leftPic1.Location = new System.Drawing.Point(0,50);
+        leftPic1.Location = new System.Drawing.Point(ScrWidth-1440,ScrHeight-850);
         leftPic1.Image = System.Drawing.Image.FromFile(@"img_resource/Mushashi.png");
         leftPic1.ClientSize = new System.Drawing.Size(175,300);
         leftPic1.SizeMode =PictureBoxSizeMode.StretchImage;
@@ -140,7 +134,7 @@ namespace FactoryMethod
         leftPic2 = new PictureBox();
         leftPic2.BorderStyle = BorderStyle.Fixed3D;
         leftPic2.AutoSize = false;
-        leftPic2.Location = new System.Drawing.Point(0,450);
+        leftPic2.Location = new System.Drawing.Point(ScrWidth-1440,ScrHeight-450);
         leftPic2.Image = System.Drawing.Image.FromFile(@"img_resource/Karna.png");
         leftPic2.ClientSize = new System.Drawing.Size(175,300);
         leftPic2.SizeMode =PictureBoxSizeMode.StretchImage;
@@ -148,7 +142,7 @@ namespace FactoryMethod
         backGround = new PictureBox();
         backGround.BorderStyle = BorderStyle.Fixed3D;
         backGround.AutoSize = false;
-        backGround.Location = new System.Drawing.Point(180,0);
+        backGround.Location = new System.Drawing.Point(ScrWidth-1260,ScrHeight-900);
         backGround.Image = System.Drawing.Image.FromFile(@"img_resource/BG_game2.jpg");
         backGround.ClientSize = new System.Drawing.Size(1078,750);
         backGround.SizeMode =PictureBoxSizeMode.StretchImage;
@@ -156,7 +150,7 @@ namespace FactoryMethod
         BGbottom = new PictureBox();
         BGbottom.BorderStyle = BorderStyle.Fixed3D;
         BGbottom.AutoSize = false;
-        BGbottom.Location = new System.Drawing.Point(0,750);
+        BGbottom.Location = new System.Drawing.Point(ScrWidth-1440,ScrHeight-150);
         BGbottom.BackColor = Color.FromArgb(68,77,202);
         BGbottom.ClientSize = new System.Drawing.Size(1440,150);
         BGbottom.SizeMode =PictureBoxSizeMode.StretchImage;
@@ -167,13 +161,13 @@ namespace FactoryMethod
         BGright.Location = new System.Drawing.Point(1260,0);
         BGright.Image = System.Drawing.Image.FromFile(@"img_resource/command.png");
         BGright.ClientSize = new System.Drawing.Size(180,760);
-        BGright.BackColor = Color.FromArgb(68,77,202);
+        // BGright.BackColor = Color.FromArgb(68,77,202);
         BGright.SizeMode =PictureBoxSizeMode.StretchImage;
 
         
 
 
-        this.Controls.Add(button1);
+        
         this.Controls.Add(btnLeft);
         this.Controls.Add(btnRight);
         this.Controls.Add(btnClaw);
@@ -184,15 +178,21 @@ namespace FactoryMethod
         this.Controls.Add(clawAnimated);
         this.Controls.Add(leftPic1);
         this.Controls.Add(leftPic2);
-        this.Controls.Add(rightPic1);
+        this.Controls.Add(BGright);
+        // this.Controls.Add(rightPic1);
         this.Controls.Add(backGround);
         this.Controls.Add(BGbottom);
-        this.Controls.Add(BGright);
         // this.Controls.Add(GBOutline);
     }
-    private Button button1,btnLeft,btnRight,btnClaw,btnStart;
+    private Button btnLeft,btnRight,btnClaw,btnStart;
     private Label horizontal,verticalLine1,verticalLine2,clawAnimated;
-    private PictureBox leftPic1,leftPic2,rightPic1,backGround,BGbottom,BGright;
+    private PictureBox leftPic1,leftPic2,backGround,BGbottom,BGright;
+    private int clawVerticalLineX = 720,
+     clawVerticalLineY = 0,
+     clawOrgSizeWidth = 5,
+     clawOrgSizeHeight = 600,
+     ScrWidth = 1440,
+     ScrHeight = 900;
     
     
 

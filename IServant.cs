@@ -2,6 +2,9 @@ namespace FactoryMethod
 {
     public interface IServant
     {
-        string MyClass();
+        string getMyName();
+        string getMyClass();
+        int getMyStar();
+        string getMyImg();
     }
 }
