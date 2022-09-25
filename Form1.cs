@@ -6,7 +6,7 @@ namespace FactoryMethod
         {
             InitializeComponent();
             button1.Click += button1_Click;
-            // GBOutline.Paint += GBOutline_Paint;
+            // GBLine.Paint += GBOutline_Paint;
         }
         private void button1_Click(object sender, EventArgs e)
         {
@@ -20,13 +20,6 @@ namespace FactoryMethod
             string voice2 = lancer.MyClass();
             MessageBox.Show(voice2);
         }
-    //     private void GBOutline_Paint(object sender, PaintEventArgs e)
-    //    {
-    //            ControlPaint.DrawBorder(e.Graphics, GBOutline.ClientRectangle,
-    //            Color.Red, 3, ButtonBorderStyle.Solid, // left
-    //            Color.Red, 3, ButtonBorderStyle.Solid, // top
-    //            Color.Red, 3, ButtonBorderStyle.Solid, // right
-    //            Color.Red, 3, ButtonBorderStyle.Solid);// bottom
-    //    }
+       
     }
 }

@@ -120,6 +120,22 @@ namespace FactoryMethod
         clawAnimated.ClientSize = new System.Drawing.Size(5,665);
         clawAnimated.BackColor = Color.BlueViolet;
 
+        clawX = new Label();
+        clawX.Text = "";
+        clawX.BorderStyle = BorderStyle.Fixed3D;
+        clawX.AutoSize = false;
+        clawX.Location = new System.Drawing.Point(520,665);
+        clawX.ClientSize = new System.Drawing.Size(200,5);
+        clawX.BackColor = Color.BlueViolet;
+
+        clawY1 = new Label();
+        clawY1.Text = "";
+        clawY1.BorderStyle = BorderStyle.Fixed3D;
+        clawY1.AutoSize = false;
+        clawY1.Location = new System.Drawing.Point(520,665);
+        clawY1.ClientSize = new System.Drawing.Size(5,50);
+        clawY1.BackColor = Color.BlueViolet;
+
         leftPic1 = new PictureBox();
         leftPic1.BorderStyle = BorderStyle.Fixed3D;
         leftPic1.AutoSize = false;
@@ -182,21 +198,24 @@ namespace FactoryMethod
         this.Controls.Add(verticalLine1);
         this.Controls.Add(verticalLine2);
         this.Controls.Add(clawAnimated);
+        this.Controls.Add(clawX);
+        this.Controls.Add(clawY1);
+        this.Controls.Add(clawY2);
         this.Controls.Add(leftPic1);
         this.Controls.Add(leftPic2);
         this.Controls.Add(rightPic1);
         this.Controls.Add(backGround);
         this.Controls.Add(BGbottom);
         this.Controls.Add(BGright);
-        // this.Controls.Add(GBOutline);
+        // this.Controls.Add(GBLine);
     }
     private Button button1,btnLeft,btnRight,btnClaw,btnStart;
-    private Label horizontal,verticalLine1,verticalLine2,clawAnimated;
+    private Label horizontal,verticalLine1,verticalLine2,clawAnimated,clawX,clawY1,clawY2;
     private PictureBox leftPic1,leftPic2,rightPic1,backGround,BGbottom,BGright;
     
     
 
-    // private Panel GBOutline;
+    // private Panel GBLine;
     #endregion
 }
 
