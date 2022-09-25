@@ -50,3 +50,10 @@ D:\MyProject\C#\FactoryMethodPattern-Winform\bin\Debug\net6.0-windows\runtimes\w
 D:\MyProject\C#\FactoryMethodPattern-Winform\bin\Debug\net6.0-windows\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
 D:\MyProject\C#\FactoryMethodPattern-Winform\bin\Debug\net6.0-windows\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
 D:\MyProject\C#\FactoryMethodPattern-Winform\obj\Debug\net6.0-windows\FactoryMethod.csproj.CopyComplete
+E:\Đại Học Huflit\HK2022-2023\PJ\FactoryMethodPattern-Winform\bin\Debug\net6.0-windows\System.Data.SqlClient.dll
+E:\Đại Học Huflit\HK2022-2023\PJ\FactoryMethodPattern-Winform\bin\Debug\net6.0-windows\runtimes\win-arm64\native\sni.dll
+E:\Đại Học Huflit\HK2022-2023\PJ\FactoryMethodPattern-Winform\bin\Debug\net6.0-windows\runtimes\win-x64\native\sni.dll
+E:\Đại Học Huflit\HK2022-2023\PJ\FactoryMethodPattern-Winform\bin\Debug\net6.0-windows\runtimes\win-x86\native\sni.dll
+E:\Đại Học Huflit\HK2022-2023\PJ\FactoryMethodPattern-Winform\bin\Debug\net6.0-windows\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+E:\Đại Học Huflit\HK2022-2023\PJ\FactoryMethodPattern-Winform\bin\Debug\net6.0-windows\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+E:\Đại Học Huflit\HK2022-2023\PJ\FactoryMethodPattern-Winform\obj\Debug\net6.0-windows\FactoryMethod.csproj.CopyComplete

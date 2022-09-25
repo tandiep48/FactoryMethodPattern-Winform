@@ -118,7 +118,7 @@ namespace FactoryMethod
         leftPic1.BorderStyle = BorderStyle.Fixed3D;
         leftPic1.AutoSize = false;
         leftPic1.Location = new System.Drawing.Point(ScrWidth-1440,ScrHeight-850);
-        leftPic1.Image = System.Drawing.Image.FromFile(@"img_resource/Mushashi.png");
+        leftPic1.Image = System.Drawing.Image.FromFile(@"img_resource/servant_img/Mushashi.png");
         leftPic1.ClientSize = new System.Drawing.Size(175,300);
         leftPic1.SizeMode =PictureBoxSizeMode.StretchImage;
         // leftPic1.BackColor = Color.BlueViolet;
@@ -135,7 +135,7 @@ namespace FactoryMethod
         leftPic2.BorderStyle = BorderStyle.Fixed3D;
         leftPic2.AutoSize = false;
         leftPic2.Location = new System.Drawing.Point(ScrWidth-1440,ScrHeight-450);
-        leftPic2.Image = System.Drawing.Image.FromFile(@"img_resource/Karna.png");
+        leftPic2.Image = System.Drawing.Image.FromFile(@"img_resource/servant_img/Karna.png");
         leftPic2.ClientSize = new System.Drawing.Size(175,300);
         leftPic2.SizeMode =PictureBoxSizeMode.StretchImage;
 

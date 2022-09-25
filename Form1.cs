@@ -8,7 +8,7 @@ namespace FactoryMethod
     {
         List<IServant> u = new List<IServant>(20);
         string connectionString = 
-        "Data Source=DESKTOP-7CMNV94\\SQLEXPRESS;Initial Catalog=school;Trusted_Connection=True;";
+        "Data Source=A9JCAFENOAYCBYU;Initial Catalog=FGO;Trusted_Connection=True;";
         public Form1()
         {
             InitializeComponent();
@@ -43,7 +43,7 @@ namespace FactoryMethod
                 serventPic.Location = new Point(randPos.Next(verticalLine1.Location.X + 50,verticalLine2.Location.X - 50),randPos.Next(horizontal.Location.Y - 200, horizontal.Location.Y - 50));
                 serventPic.Size = new Size(50,50);
                 serventPic.SizeMode = PictureBoxSizeMode.StretchImage;
-                serventPic.Image = System.Drawing.Image.FromFile(@"img_resource/Mushashi.png");
+                serventPic.Image = System.Drawing.Image.FromFile(@"img_resource/servant_img/"+servant.getMyImg()+".png");
                 this.Controls.Add(serventPic);
                 orderToBack();
             }
@@ -75,12 +75,12 @@ namespace FactoryMethod
                             factory.CreateServant(name, clss, stars, imgs);
                             serventData.Add(factory.CreateServant(name, clss, stars, imgs));
                         }
-                        if(clss == "Lancer")
-                        {
-                            factory = new LancerFactory();
-                            factory.CreateServant(name, clss, stars, imgs);
-                            serventData.Add(factory.CreateServant(name, clss, stars, imgs));
-                        }
+                        // if(clss == "Lancer")
+                        // {
+                        //     factory = new LancerFactory();
+                        //     factory.CreateServant(name, clss, stars, imgs);
+                        //     serventData.Add(factory.CreateServant(name, clss, stars, imgs));
+                        // }
                     }
                 }
             }
